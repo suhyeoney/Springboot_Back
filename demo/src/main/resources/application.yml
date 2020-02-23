@@ -1,0 +1,32 @@
+#encoding
+#database : cmd window -> C:\Program Files\MySQL\MySQL Server 8.0\bin -> mysql -u publicdb -p
+#static resources
+
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://devops-db.c7iudllookzy.ap-northeast-2.rds.amazonaws.com:3306/teama?useSSL=false&serverTimezone=UTC&useCursors=false&sendStringParametersAsUnicode=false&characterEncoding=UTF8
+    username: master
+    password: ENC(2p0flrgzXe8WVAaGwFF5ZbIY5egn6S9t)
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
+    add-mappings: true
+    
+
+#server port
+server:
+  port: 8090
+  
+#jasypt
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+    algorithm: PBEWithMD5AndDES
+    password: devops

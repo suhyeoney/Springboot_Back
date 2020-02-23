@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JasyptConfig {
 
-	@Bean("jasyptStringEncryptor")
+	@Bean("jasyptStringEncryptor") // application.yml 파일에 "jasyptStringEncryptor" 라는 이름의 빈 정의
 	public StringEncryptor stringEncryptor() {
 		   PooledPBEStringEncryptor enc = new PooledPBEStringEncryptor();
 	        SimpleStringPBEConfig config = new SimpleStringPBEConfig();

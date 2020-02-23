@@ -157,6 +157,5 @@ public class BoardControllerTest {
 						"	\"content\": \"hoya\"\r\n" + 
 						"}")
 				.accept(MediaType.APPLICATION_JSON)).andDo(print()).andExpect(status().isCreated());
-
 	}
 }

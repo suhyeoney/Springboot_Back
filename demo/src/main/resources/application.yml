@@ -10,8 +10,8 @@ spring:
       force: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://devops-db.c7iudllookzy.ap-northeast-2.rds.amazonaws.com:3306/teama?useSSL=false&serverTimezone=UTC&useCursors=false&sendStringParametersAsUnicode=false&characterEncoding=UTF8
-    username: master
+    url: jdbc:mysql://devops-db.c7iudllookzy.ap-northeast-2.rds.amazonaws.com:3306/demo?useSSL=false&serverTimezone=UTC&useCursors=false&sendStringParametersAsUnicode=false&characterEncoding=UTF8
+    username: masteremo
     password: ENC(2p0flrgzXe8WVAaGwFF5ZbIY5egn6S9t)
   mvc:
     static-path-pattern: /static/**
